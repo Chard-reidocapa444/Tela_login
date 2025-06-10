@@ -1,0 +1,214 @@
+
+body, html{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000  ;
+}     
+
+/*======================================= Logo ==================================================================*/
+.logo{
+    display: flex;
+    position: absolute;
+    left: 0;    
+    margin-left: 3rem;
+    margin-top: 4vh;
+}
+.logo img{
+    width: 15vw;
+}
+
+
+/*======================================= Header ==================================================================*/
+ header {
+    background-color: #000000;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem ;
+    background-image: url(https://cdn.pixabay.com/video/2023/06/25/168811-839864556_tiny.jpg);
+    background-size: cover;
+    height: 0vh;
+}
+
+/*======================================= Main ==================================================================*/
+main {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left;
+    display: flex;
+    color: white;
+    margin-top: -10vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/video/2023/06/25/168811-839864556_tiny.jpg');
+    background-size: cover;
+    height: 104vh;
+}
+/* ======================================= Navegação ==================================================================*/
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 2vh;
+    gap:10vw;
+    padding: 0;
+}
+.nav ul li a {
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    transition: color 0.3s ease;
+    font-size: 1.5vw;
+    gap: 10vw;
+    cursor: pointer;
+    z-index: 10;
+}
+.nav ul li a:hover {
+    color: #df7000;
+}
+
+/*======================================= Texto ==================================================================*/
+h1{
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px; 
+    margin-top: 40vh;
+    margin-left: 10vw;
+    position: relative;
+    z-index: 1 ;
+    max-width: 50vw;
+}
+h2{
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 4vw;
+    font-style: normal;
+    justify-content: center;
+    position: absolute;
+}
+
+h3{
+    text-align: center;
+    align-items: center;
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 2vw;
+}
+/*======================================= Linhas ==================================================================*/
+.linha{
+    display: flex;
+    align-items: center;
+    width: 85vw;
+    height: 0.5px;
+    background-color: #ffffff;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    position: relative;
+}
+.linha2{
+    display: flex;
+    align-items: center;
+    width: 85vw;
+    height: 0.5px;
+    background-color: #ffffff;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    position: relative;
+}
+/*======================================= Menu ==================================================================*/
+.menu-icon {
+    position: absolute;
+    margin-top: 3vh;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu-icon span :hover{
+    color: #df7000;
+}
+
+/*======================================= Galeria ==================================================================*/
+
+.carrossel_galeria{
+    margin: 50px auto;
+    padding: 0 20px;
+    overflow: hidden;
+    width: 85vw;
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+.glr_foto{
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.glr_foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*======================================= LogIn/SignIn ==================================================================*/
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btnlogin {
+    border-radius: 25px;
+    background-color: #FFF;
+    border: 1px solid #000000;
+    color: #000;
+    padding: 10px 15px;
+}
+
+.btncadastro {
+    border-radius: 25px;
+    padding: 8px 15px;
+    background-color: #00000000;
+    border: 2px solid #ffffff;
+    color: #FFF;
+}
+
+.btncadastro:hover {
+    background-color: #df7000;
+    border: 1px solid #ffffff;
+}
+.b-entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    margin-right: 3rem;
+    margin-top: 15px;
+    position: absolute;
+}
+
+/*= Teste=*/

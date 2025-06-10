@@ -2,7 +2,7 @@
 	$domain = "localhost";   // Localização do servidor
 	$user = "root";          // Usuário do banco de dados
 	$password = "";          // Senha do banco de dados
-	$database = "bd_projeto"; // Nome do banco de dados
+	$database = "bd_drone"; // Nome do banco de dados
 
 	// Criando a conexão com o banco de dados
 	$mysqli = new mysqli($domain, $user, $password, $database);
@@ -13,5 +13,6 @@
 	}
 
 	// Definir o charset para evitar problemas com acentos
-	$mysqli->set_charset("utf8");
+	define('CHARSET', 'utf8');
+	$mysqli->set_charset(CHARSET);
 ?>

@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="css/Cadastro.css">
+    <link rel="stylesheet" href="css/styleCadastro.css">
+    <script src="js/cadastro.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Unicons CDN Stylesheet -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
-    <form class="form">
-        <p class="form-title">Crie sua conta</p>
+ 
+ 
+ 
+    <form class="form" method="post" action="php/cadastro.php">
+        <p class="form-title">Entre com sua conta</p>
         <div class="input-container">
-            <input placeholder="Nome" type="text">
-        </div>
-        <div class="input-container">
-            <input placeholder="Data de Nascimento" type="date">
-        </div>
-        <div class="input-container">
-            <input placeholder="E-mail" type="email">
-        </div>
-        <div class="input-container">
-            <input placeholder="Senha" type="password">
-        </div>
-        <div class="input-container">
-            <input placeholder="Confirme a Senha" type="password">
-        </div>
-        <h6>Ao criar uma conta, você confirma que concorda <br> com a Fluxo Aero</h6>
-        <button class="submit" type="submit">Cadastrar</button>
+          <input placeholder="Nome" type="text" name="nome">
+          <label for="data_nascimento">Data de nascimento</label>
+          <input type="date" id="data_nascimento" name="data_nascimento" style="width: 100%;">
+          <input placeholder="Email" type="email" name="email">
+       </div>
+       <div class="input-container">
+           <input placeholder="Senha" type="password" name="senha">
+           <input placeholder="Confirmar Senha" type="password" name="confirmar_senha">
+         </div>
+          <button class="submit" type="submit">
+         Cadastre-se
+       </button>
     </form>
 </body>
-<script src="js/Cadastro.js"></script>
 </html>

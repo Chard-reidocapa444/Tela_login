@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload de Imagem</title>
+</head>
+<body>
+    <h1>Enviar Imagem</h1>
+    <form action="upload_imagem.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="imagem" required><br>
+        <input type="text" name="titulo" placeholder="Título"><br>
+        <input type="text" name="sub_titulo" placeholder="Subtítulo"><br>
+        <textarea name="descricao" placeholder="Descrição"></textarea><br>
+        <input type="text" name="local" placeholder="Local"><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
